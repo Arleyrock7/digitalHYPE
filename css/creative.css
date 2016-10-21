@@ -43,6 +43,7 @@ p {
   margin-bottom: 20px;
 }
 .bg-primary {
+  font-weight: 100;
   background-color: #eb423d;
 }
 .bg-dark {
@@ -80,6 +81,7 @@ aside {
   color: #eb3812;
 }
 .navbar-default .navbar-header .navbar-toggle  {
+  margin-top: 14px;
   font-weight: 700;
   font-size: 12px;
   color: #222222;
@@ -110,16 +112,35 @@ aside {
 .navbar-default .nav > li.active > a:focus:hover {
   background-color: transparent;
 }
-
+.modal-header {
+    padding: 15px;
+    border-bottom: 1px solid #eb423d;
+    background: #eb423d;
+    color: white;
+}
+.modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: rgba(0, 0, 0, 0.8);
+}
+button.close {
+    color: #000;
+}
 .modal-content .textoModal p {
   color: #777;
   font-size: 13px;
 }
-
+.modal-footer .textoModal {
+    padding: 15px;
+    text-align: left;
+    font-weight: 100;
+    border-top: 1px solid #e5e5e5;
+}
 section .bg-primary a {
   border: solid #fff 02px;
 }
 #contact {
+  font-weight: 100;
   background-color: #eb423d;
 }
 #contact h2, p, i {
@@ -132,6 +153,9 @@ section .bg-primary a {
 }
 #contact #mail a {
   color: white;
+}
+#fikner {
+  font-weight: 100;
 }
 #fikner .btn-default {
   width: 100%;
@@ -284,6 +308,20 @@ header .header-content .header-content-inner p {
     margin: 20px auto 0;
   }
 }
+.service-box1 {
+  font-weight: 100;
+  transition: 0.3s ease;
+ 	-moz-transition: 0.3s ease; /* Firefox */
+ 	-webkit-transition: 0.3s ease; /* Chrome - Safari */
+ 	-o-transition: 0.3s ease; /* Opera */
+}
+.service-box1:hover {
+  transform : scale(1.2);
+  -moz-transform : scale(1.2); /* Firefox */
+  -webkit-transform : scale(1.2); /* Chrome - Safari */
+  -o-transform : scale(1.2); /* Opera */
+  -ms-transform : scale(1.2); /* IE9 */
+}
 .service-box1 a:hover {
   text-decoration: none;
 }
@@ -294,7 +332,7 @@ header .header-content .header-content-inner p {
   color: #eb423d;
 }
 .service-box1:hover {
-  background-color: rgba(235, 66, 61, 0.09);
+  background-color: rgba(75, 79, 86, 0.09);
 }
 .service-box1:focus {
   background-color: red;
@@ -475,12 +513,13 @@ fieldset[disabled] .btn-primary.active {
 .btn {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   border: none;
-  border-radius: 5px;
+  border-radius: 2px;
   font-weight: 700;
   text-transform: uppercase;
 }
 .btn-xl {
   padding: 15px 30px;
+  box-shadow: 0px 0px 0px 1px white;
 }
 ::-moz-selection {
   color: white;
@@ -503,19 +542,37 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #222222;
 }
-
+.modal-content {
+    position: relative;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #999;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 2px;
+    outline: 0;
+    -webkit-box-shadow: 0 3px 9px rgba(0,0,0,.5);
+    box-shadow: 0 3px 9px rgba(0,0,0,.5);
+}
+.navbar-right {
+    float: right!important;
+    margin-right: -15px;
+    margin-top: 5px;
+}
 
 
 @media (min-width: 268px) {
   .navbar-default {
+    height: 60px;
     background-color: transparent;
     border-color: rgba(255, 255, 255, 0.3);
   }
   .navbar-brand>img {
-    margin-top: -11px;
+    margin-top: -7px;
     width: 86px;
 }
   .navbar-default.affix {
+    height: 60px;
     background-color: white;
     border-color: rgba(34, 34, 34, 0.05);
   }
@@ -524,5 +581,6 @@ body {
     font-size: 14px;
   }
   .navbar-default.affix .navbar-header .navbar-brand>img {
-    background-color: #4b4f56;
+    background-color: #eb423d;
+    box-shadow: 0px 0px 0px 1px #eb423d;
   }
