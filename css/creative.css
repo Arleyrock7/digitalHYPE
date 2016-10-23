@@ -356,6 +356,9 @@ header .header-content .header-content-inner p {
   max-width: 650px;
   margin: 0 auto;
 }
+.portfolio-box .text-faded {
+  color: white;
+}
 .portfolio-box .portfolio-box-caption {
   color: white;
   opacity: 0;
