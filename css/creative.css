@@ -170,7 +170,7 @@ footer {
   background-color: #4b4f56;
   display: block;
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 0px;
 }
 footer h3, li {
   color: #bec2c9;
@@ -191,6 +191,14 @@ footer a {
 }
 footer a:hover {
   color: white;
+}
+footer #total {
+    border-color: #bec2c9;
+    border-width: 1px;
+    max-width: 100%;
+}
+footer #copy {
+    color: #bec2c9;
 }
 @media (min-width: 768px) {
   .navbar-default {
