@@ -200,6 +200,12 @@ footer #total {
 footer #copy {
     color: #bec2c9;
 }
+.modal-footer {
+    padding: 15px;
+    text-align: right;
+    border-top: #eb423d;
+    background: #eb423d;
+}
 @media (min-width: 768px) {
   .navbar-default {
     background-color: transparent;
